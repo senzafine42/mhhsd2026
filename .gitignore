@@ -1,0 +1,57 @@
+# =========================
+# OS / System files
+# =========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+# Editor / IDE
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# =========================
+# Git safety
+# =========================
+.git/
+.gitignore~
+
+# =========================
+# Logs
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Build / temp artifacts
+# (safe even if unused now)
+# =========================
+dist/
+build/
+.cache/
+
+# =========================
+# Node (only if added later)
+# =========================
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# =========================
+# Env / secrets
+# =========================
+.env
+.env.*
+*.pe*
