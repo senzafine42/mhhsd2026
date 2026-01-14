@@ -2,11 +2,18 @@
 
 ## 2026
 - 2026-01-14: Added info to README (commit 11e3a29)
+- 2026-01-14: Updated dates to 2026
+    - [x] 2026 September 11th-13th!  The location is at Crosswinds RC Club in Parker, CO.
+    - [x] New Video Link:  https://youtu.be/-r7s-4r3aWs
+    - [x] Google Pin Location:  https://maps.app.goo.gl/v9A9J32BEJeSUhoc6
+    - [ ] RVs:  Drycamping only and limited to 10 RVs.  Must reserve with Adam after registration
+    - [ ] Registration including Saturday Night Pilot Dinner:  $35
+    - [ ] Power:  Limited AC power
+    - [ ] Crosswinds Website:  crosswindsrc.com
+    - [ ] Shade:  Limited Shade
 
 ## 2025 (frozen)
 - Final commit: be95388 (Final version of 2025 website)
-
-## 2026
 
 ### Planned / TODO
 
@@ -52,8 +59,6 @@
 - [ ] Document performance changes in `docs/02-performance.md`
 - [ ] Run Lighthouse and record baseline vs improved scores
 
-
-
 #### Security Baseline
 - 2026-01-14: Initial securityheaders.com scan
   - Grade: **F**
@@ -65,3 +70,4 @@
     - Referrer-Policy
     - Permissions-Policy
   - Purpose: establish pre-hardening baseline before 2026 improvements
+
