@@ -11,8 +11,8 @@
 ### Planned / TODO
 
 #### Security Hardening
-- [ ] Block access to `/.git/*` and other sensitive paths on web server
-- [ ] Run site through https://securityheaders.com and record baseline score
+- [x] Block access to `/.git/*` and other sensitive paths on web server
+- [x] Run site through https://securityheaders.com and record baseline score
 - [ ] Add baseline HTTP security headers:
   - [ ] `Strict-Transport-Security: max-age=31536000; includeSubDomains; preload`
         - (Only after confirming HTTPS is enforced everywhere)
@@ -51,3 +51,17 @@
   - [ ] Leverage CDN for security headers and optional WAF
 - [ ] Document performance changes in `docs/02-performance.md`
 - [ ] Run Lighthouse and record baseline vs improved scores
+
+
+
+#### Security Baseline
+- 2026-01-14: Initial securityheaders.com scan
+  - Grade: **F**
+  - Missing headers:
+    - Strict-Transport-Security
+    - Content-Security-Policy
+    - X-Frame-Options
+    - X-Content-Type-Options
+    - Referrer-Policy
+    - Permissions-Policy
+  - Purpose: establish pre-hardening baseline before 2026 improvements
