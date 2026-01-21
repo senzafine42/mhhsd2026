@@ -6,8 +6,8 @@
     - [x] 2026 September 11th-13th!  The location is at Crosswinds RC Club in Parker, CO.
     - [x] New Video Link:  https://youtu.be/-r7s-4r3aWs
     - [x] Google Pin Location:  https://maps.app.goo.gl/v9A9J32BEJeSUhoc6
-    - [ ] RVs:  Drycamping only and limited to 10 RVs.  Must reserve with Adam after registration
-    - [ ] Registration including Saturday Night Pilot Dinner:  $35
+    - [x] RVs:  Drycamping only and limited to 10 RVs.  Must reserve with Adam after registration
+    - [x] Registration including Saturday Night Pilot Dinner:  $35
     - [ ] Power:  Limited AC power
     - [ ] Crosswinds Website:  crosswindsrc.com
     - [ ] Shade:  Limited Shade
