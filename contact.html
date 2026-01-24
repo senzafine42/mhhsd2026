@@ -1,789 +1,145 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <title>Mile High Heli Showdown | RC Helicopter Funfly Contact Us</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700" rel="stylesheet">
-        <style>
-            /*--------------------Universal CSS--------------------*/
-            html {
-                font-size: 16px;
-            }
-            body {
-                font-size: .8rem;
-                color: #000000;
-                font-family: "Open Sans", sans-serif;
-                font-weight: 300;
-                padding: 0px;
-                margin: 0px;
-            }
-            p {
-                font-family: "Open Sans", sans-serif;
-
-            }
-            h1 {
-                font-family: "Open Sans", sans-serif;
-                font-weight: 700;
-                font-size: 3rem;
-                text-transform: uppercase;
-            }
-            h2{
-                font-family: "Open Sans", sans-serif;
-                font-weight: 700;
-                font-size: 1.5rem;
-                text-transform: uppercase;
-            }
-            .large-h2{
-                font-size: 2rem;
-                margin-bottom: 1rem;
-            }
-
-            h3{
-                font-family: "Open Sans", sans-serif;
-                font-weight: 300;
-                font-size: 1.2rem;
-                font-style: italic;
-
-
-            }
-
-            .subtitle{
-                font-size: 1.2rem;
-                font-style: italic;
-            }
-            .button {
-                background-color: #d2b48c;
-                color: #ffffff !important;
-                border: none;
-                cursor: pointer;
-                display: inline-block;
-                font-family: "Open Sans",sans-serif !important;
-                font-weight: bold;
-                line-height: 20px;
-                padding: 10px 75px;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                text-align: center;
-                transition: background-color .2s;
-                text-decoration: none;
-                min-width: 220px;
-                background-image: linear-gradient(to right,rgb(0,0,0),#d2b48c);
-            }
-            .button:hover{
-                opacity: .85;
-                text-decoration: none;
-            }
-
-            .button-black{
-                  background-color: #000000 !important;
-            }
-
-            .button-green{
-                background-color: #A5E914;
-
-            }
-
-            .button-2 {
-                color: #ffffff !important;
-                border: none;
-                cursor: pointer;
-                display: inline-block;
-                font-family: "aller",sans-serif !important;
-                font-weight: bold;
-                line-height: 20px;
-                padding: 13px 75px;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                border-radius: 3px;
-                text-align: center;
-                transition: background-color .2s;
-                text-decoration: none;
-                border: 2px solid #ffffff;
-                min-width: 220px;
-            }
-            .button-2:hover{
-                color: #eeeeee !important;
-                border-color: #eeeeee;
-                text-decoration: none;
-            }
-
-            .text-center{
-                text-align: center;
-            }
-            img {
-                height: auto;
-                max-width: 100%;
-                vertical-align: middle;
-                border: 0;
-                -ms-interpolation-mode: bicubic;
-            }
-            .no-padding{
-                padding: 0px !important;
-            }
-            .display-block{
-                display: block;
-            }
-
-            :focus { outline: none; }
-            /*--------------------End Universal CSS--------------------*/
-            /*--------------------Header CSS--------------------*/
-
-            header{
-                position: fixed;
-                right: 0;
-                left: 0;
-                transition: background-color .2s;
-                z-index: 99;
-            }
-
-            .header-solid{
-                background-color: #000000;
-            }
-
-            #logo-container {
-                float:left;
-                margin: 5px 0px;
-            }
-            #main-nav-container{
-                margin: 28px 0px;
-                width: 100%;
-            }
-
-            #logo-container img{
-                width: 300px;
-                height: auto;
-            }
-            #site-nav-container{
-                float:right;
-            }
-
-            @media (min-width:992px) {
-                #site-nav {
-                    display: block !important;
-                }
-                #action-nav {
-                    display: block !important;
-                }
-                #hamburger-button {
-                    display: none !important;
-                }
-            }
-
-            #site-nav{
-                text-align: left;
-                margin: 0px;
-                padding-left: 19px;
-                display: none;
-            }
-            #site-nav li{
-                display: inline-block;
-                list-sytle-type: none;
-            }
-            #site-nav .last{
-                padding-right: 19px;
-            }
-
-            #site-nav li a{
-                font-weight: 300;
-                padding: 10px 19px;
-                display: block;
-                text-decoration: none;
-                color: #ffffff;
-                text-align: center;
-                font-family: "Open Sans", sans-serif;
-                font-weight: 700;
-                text-transform: uppercase;
-                -webkit-transition: all .2s ease 0s;
-                transition: all .2s ease 0s;
-            }
-            #site-nav li a:hover{
-                color: #14A5E9;
-            }
-
-            #action-nav-container{
-                float: right;
-                text-align: right;
-                display: inline;
-                color: #ffffff;
-                font-family: "Open Sans", sans-serif;
-                font-weight: 700;
-                text-transform: uppercase;
-            }
-            #action-nav{
-                text-align: left;
-                margin: 0px;
-                padding-left: 19px;
-                display: none;
-            }
-            #action-nav li{
-                display: inline-block;
-                list-sytle-type: none;
-            }
-            #action-nav li a{
-                font-weight: 700;
-                padding: 10px 20px 10px 0px;
-                display: block;
-                text-decoration: none;
-                color: #ffffff;
-                text-align: center;
-                font-family: "Open Sans", sans-serif;
-                text-transform: uppercase;
-            }
-            #action-nav li a:hover{
-                color: #14A5E9;
-            }
-            #action-nav-container img{
-                margin: 0px 2px 2px 20px;
-                height: 14px;
-                width: 14px;
-            }
-            .header-button{
-                padding: 10px 10px !important;
-                min-width: 100px;
-            }
-            #hamburger-button {
-                    padding-top: 5px;
-                }
-            #hamburger-toggle {
-                width: 23px;
-                position: relative;
-                -webkit-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-                transform: rotate(0deg);
-                -webkit-transition: .5s ease-in-out;
-                -moz-transition: .5s ease-in-out;
-                -o-transition: .5s ease-in-out;
-                transition: .5s ease-in-out;
-                cursor: pointer;
-                padding: 15px;
-            }
-            .hamburger-icons {
-                cursor: pointer;
-                margin-right: 5px;
-            }
-            #hamburger-toggle span:nth-child(1) {
-                top: 5px;
-            }
-            #hamburger-toggle span:nth-child(2), #hamburger-toggle span:nth-child(3) {
-                top: 13px;
-            }
-            #hamburger-toggle span:nth-child(4) {
-                top: 21px;
-            }
-            #hamburger-toggle span {
-                display: block;
-                position: absolute;
-                height: 2px;
-                width: 76%;
-                background: #ffffff;
-                border-radius: 25px;
-                opacity: 1;
-                left: 0;
-                -webkit-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-                transform: rotate(0deg);
-                -webkit-transition: .25s ease-in-out;
-                -moz-transition: .25s ease-in-out;
-                -o-transition: .25s ease-in-out;
-                transition: .25s ease-in-out;
-                margin-left: 12%;
-                margin-top: 1px;
-            }
-
-            .hamburger-button .open {
-                width: 40%;
-                background-color: #000;
-                border-radius: 5px;
-                -moz-border-radius: 5px;
-                -webkit-border-radius: 5px;
-                z-index: 99;
-            }
-            #hamburger-toggle.open span:nth-child(1) {
-                top: 18px;
-                width: 0%;
-                left: 50%;
-            }
-
-            #hamburger-toggle.open span {
-                height: 2px;
-                width: 60%;
-                margin-top: 1px;
-                margin-left: 20%;
-            }
-
-            #hamburger-toggle.open span:nth-child(2) {
-                -webkit-transform: rotate(45deg);
-                -moz-transform: rotate(45deg);
-                -o-transform: rotate(45deg);
-                transform: rotate(45deg);
-            }
-
-            #hamburger-toggle.open span:nth-child(3) {
-                -webkit-transform: rotate(-45deg);
-                -moz-transform: rotate(-45deg);
-                -o-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-            }
-            #hamburger-toggle.open span:nth-child(4) {
-                top: 18px;
-                width: 0%;
-                left: 50%;
-            }
-
-            #mobile-nav-container{
-                background-color: rgba(0,0,0,0.85);
-                padding: 10px 30px 25px 30px;
-                display: none;
-                position: fixed;
-                z-index: 400;
-                width: 100%;
-                height: 100%;
-                z-index: 98;
-                padding-top: 100px;
-            }
-            #mobile-nav{
-                padding: 0px;
-            }
-            #mobile-nav li{
-                display: block;
-                list-sytle-type: none;
-            }
-            #mobile-nav li a{
-                color: #ffffff;
-                font-size: .8rem;
-                font-weight: 700;
-                padding: 20px;
-                display: block;
-                text-decoration: none;
-                text-align: center;
-                font-family: "Open Sans", sans-serif;
-                text-transform: uppercase;
-            }
-            #mobile-nav li a:hover{
-                color: #14A5E9;
-            }
-            #mobile-header-button-container{
-                width: 100%;
-                padding: 20px;
-                text-align: center;
-            }
-
-            .text-white{
-                color: #ffffff;
-            }
-
-            .anchor{
-              display: block;
-              height: 115px; /*same height as header*/
-              margin-top: -115px; /*same height as header*/
-              visibility: hidden;
-            }
-
-
-            /*--------------------End Header CSS--------------------*/
-            /*--------------------Footer CSS--------------------*/
-
-
-            footer{
-                background-image: linear-gradient(to right,rgb(0,0,0),#d2b48c);
-            }
-            .footer-container{
-                margin: 60px 0px 30px 0px;
-                float: left;
-                width: 100%;
-                color: #ffffff;
-                font-size: .8rem;
-                text-align: center;
-            }
-            .social-buttons{
-                margin: 0 0 60px 0;
-            }
-            .social-buttons img {
-                width: 28px;
-                height: auto;
-                margin: 0 8px 0 8px;
-            }
-
-            .contact-container {
-                background-color: #000000;
-            }
-            .contact-content{
-                margin: 20px 0px 20px 0px;
-                float: left;
-                width: 100%;
-                color: #ffffff;
-                font-size: .8rem;
-                text-align: center;
-            }
-
-            .contact-content h2 {
-                margin: 30px 0px 0px 0px;
-            }
-
-            .contact-content .button {
-                margin: 20px 0px;
-            }
-
-            /*--------------------End Footer CSS--------------------*/
-
-            /*--------------------Home Page CSS--------------------*/
-            /*main Section CSS*/
-            .main-background{
-                background: url("/images/arvada_p380.jpg");
-                background-size: cover;
-                /* background-size:contain; */
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-            .main-gradient{
-                background: rgba(0,0,0,0.5);
-
-            }
-            .main-container {
-                padding: 120px 0px 100px 0px;
-                font-size: 1rem;
-                width: 360px;
-                margin: 0 auto;
-            }
-            @media (min-width:768px) {
-                .main-container {
-                    padding: 240px 0px 200px 0px;
-                }
-            }
-
-            .main-description-container{
-                margin: 0px 0px 30px 0px;
-            }
-
-
-            .main-bottom-text{
-                text-transform: uppercase;
-                font-family: "Open Sans", sans-serif;
-                font-weight: 700;
-                font-size: 1.6rem;
-                text-transform: uppercase;
-                color: #ffffff;
-                text-align: center;
-                text-justify: auto;
-
-            }
-
-            .main-bottom-text:after {
-                content: "";
-                display: inline-block;
-                width: 100%;
-            }
-
-
-            .main-button {
-                margin-top: -3.2rem;
-                width: 100%;
-            }
-
-            /*Offer Section CSS*/
-            #offer{
-                padding: 30px 0px;
-                width: 100%;
-                float: left;
-                background-image: linear-gradient(to right,rgb(233, 20, 66),#145fe9);
-            }
-            .offer {
-                text-align: center;
-                padding-top: 30px;
-            }
-            .offer-description {
-                margin-bottom: 40px;
-            }
-            .offer-image{
-                height: 100px;
-            }
-
-            .offer-text{
-                color: #ffffff;
-                font-size: 1.2rem;
-            }
-
-            /*--------------------End Home Page CSS--------------------*/
-
-            /*--------------------About Page CSS--------------------*/
-            #leadership .container{
-                padding-top: 80px;
-                padding-bottom: 80px;
-            }
-            .officer-title{
-                font-size: 1rem;
-            }
-
-            .leader-block{
-                padding-top: 15px;
-                padding-bottom: 15px;
-            }
-
-            .leader-block img{
-                width: 100%;
-                -webkit-filter: grayscale(100%);
-                filter: grayscale(100%);
-            }
-
-            .leader-block img:hover{
-                width: 100%;
-                -webkit-filter: none;
-                filter: none;
-            }
-
-            .leader-text{
-                background-color: #14A5E9;
-                padding: 6px 10px;
-                bottom: 75px;
-                margin-bottom: -75px;
-                opacity: .80;
-                height: 75px;
-            }
-
-             .leader-text h2{
-                margin-top: 5px;
-                margin-bottom: 5px;
-
-            }
-
-            .vidwrapper {
-              width: 100%; max-width: 1024px;
-              margin: 3em auto;
-              border: 5px solid red;
-            }
-
-            .vidcontainer {
-              width: 100%; max-width: 100%; height: 0;
-              padding-bottom: 56.25%;
-              border: 5px solid green;
-              position: relative;
-            }
-
-            .vidcontainer iframe {
-              width: 100%; max-width: 100%; height: 100%;
-              position: absolute; top: 0; left: 0;
-            }
-
-            /*--------------------End About Page CSS--------------------*/
-
-            /*--------------------Contact Page CSS--------------------*/
-            #contact .container{
-                padding-top: 80px;
-                padding-bottom: 80px;
-            }
-
-            /*--------------------End Contact Page CSS--------------------*/
-
-             /*--------------------Field Location Page CSS--------------------*/
-            #field-location .container{
-                padding-top: 80px;
-                padding-bottom: 80px;
-            }
-            .other-flying-sites{
-                border-top: 1px solid #e5e5e5;
-            }
-
-
-
-            /*--------------------End Field Location Page CSS--------------------*/
-
-
-            </style>
-    </head>
-    <body>
-        <div id="mobile-nav-container">
-            <ul id="mobile-nav">
-              <li>
-                <a class="button mobile-header-button" href="index.html">Main Page</a>
-              </li>
-              <li>
-                <a class="button mobile-header-button" href="field-location.html">Location</a>
-              </li>
-              <lil>
-                <a class="button mobile-header-button" data-toggle="modal" data-target="#register">Register</a>
-              </lil>
-            </ul>
-        </div>
-    <header>
-        <div class="container">
-            <div id="main-nav-container">
-                <div id="site-nav-container">
-                    <ul id="site-nav">
-                      <li>
-                        <a class="button header-button" href="index.html">Main Page</a>
-                      </li>
-                      <li>
-                        <a class="button header-button" href="field-location.html">Location</a>
-                      </li>
-                      <li>
-                        <a class="button header-button" data-toggle="modal" data-target="#register">Register</a>
-                      </li>
-                    </ul>
-
-                </div>
-                <div id="action-nav-container">
-                    <div id="hamburger-button" class="hamburger-icons">
-                        <div id="hamburger-toggle">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-<div class="container-fluid no-padding">
-        <div class="main-background">
-            <div class="main-gradient">
-                <div class="container">
-                    <div class="main-container text-center text-white">
-                    </div>
-                </div>
-            </div>
-        </div>
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NE7JZFKQH3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NE7JZFKQH3');
+</script>
+<title>Contact | Mile High Heli Showdown</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Contact the Mile High Heli Showdown team.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/favicon.ico">
+<meta property="og:title" content="Contact | Mile High Heli Showdown">
+<meta property="og:description" content="Contact the Mile High Heli Showdown team.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/mhhsd_flyer.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-badge" aria-hidden="true"></span>
+      <span>Mile High Heli Showdown</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="location.html">Field Location</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="register.html">Register</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="button primary" href="register.html">Register</a>
+      <button class="icon-button" id="menuButton" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
     </div>
+  </div>
+</header>
 
-    <div class="container-fluid no-padding contact-container">
-        <div class="container-fluid no-padding contact-content">
-            <div class="container">
-                <div class="col-xs-12 col-sm-12 col-md-8"><h2>Questions about the fun fly?</h2></div><div class="col-xs-12 col-sm-12 col-md-4"></div>
-            </div>
-        </div>
+<div class="mobile-nav" id="mobileMenu" role="dialog" aria-label="Mobile menu">
+  <a href="index.html">Home</a>
+  <a href="location.html">Field Location</a>
+  <a href="contact.html">Contact</a>
+  <a href="register.html">Register</a>
+</div>
+
+<main id="main">
+  <section class="hero" style="padding-bottom:1.25rem;">
+    <div class="container">
+      <div class="kicker"><span class="dot" aria-hidden="true"></span> Contact</div>
+      <h1>Get in touch</h1>
+      <p class="subhead">Fastest way to reach the group is via Facebook. Email also works.</p>
     </div>
+  </section>
 
-<div class="container-fluid no-padding">
-        <div class="hero-background">
-            <div class="hero-gradient">
-                <div class="container">
-                </div>
-            </div>
-        </div>
-
-        <div id="container">
-        <br>
-        <center>
-          <a href="/">
-              <img src="/images/2021_ph.png" width="800px">
+  <section class="section" style="padding-top:0;">
+    <div class="container split">
+      <div class="card">
+        <div class="pad">
+          <h2 style="margin-top:0;">Facebook</h2>
+          <p class="lead" style="margin-bottom:1rem;">Join the community and ask questions.</p>
+          <a class="button primary" href="https://www.facebook.com/groups/milehighhelishowdown/" target="_blank" rel="noopener noreferrer">
+            Open Facebook Group
           </a>
-          <br>
-          <br>
-          <div>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefZ5biJCSGwQqecp7D3wW281IOTpcrUVxP8GElyiqwBL0tfg/viewform?embedded=true" width="400" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-          </div>
-        <div>
-          <footer class="container-fluid no-padding">
-                  <div class="container-fluid no-padding footer-container">
-                      <div class="container">
-                          <div class="social-buttons">
-                              <h2>Check us out on Facebook</h2>
-                              <a href="https://www.facebook.com/groups/milehighhelishowdown/"><img src="/images/facebook-36.png"></a>
-                          </div>
-                          Copyright © 2021 Mile High Heli Showdown
-                      </div>
-                  </div>
-          </footer>
         </div>
+      </div>
 
-
-    <!-- Register Modal -->
-    <div id="register" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h2 class="modal-title">Register for Mile High Heli Showdown</h2>
-            <p>Experience three action-packed days of flying, friends, and fun. Hang out with all your heli friends you've been missing!</p>
-            <p>AMA membership is required to fly.</p>
+      <div class="card">
+        <div class="pad">
+          <h2 style="margin-top:0;">Email</h2>
+          <p class="lead" style="margin-bottom:1rem;">For registration or event questions.</p>
+          <div class="notice">
+            <strong>milehighhelishowdown@gmail.com</strong><br>
+            <span class="small">Click to email:</span>
+            <a href="mailto:milehighhelishowdown@gmail.com?subject=Mile%20High%20Heli%20Showdown%20Question"><strong>Send an email</strong></a>
           </div>
-          <div class="modal-body">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 
-              <!-- Identify your business so that you can collect the payments. -->
-              <input type="hidden" name="business" value="milehighhelishowdown@gmail.com">
-
-              <!-- Specify a Buy Now button. -->
-              <input type="hidden" name="cmd" value="_xclick">
-
-              <!-- Specify details about the item that buyers will purchase. -->
-              <input type="hidden" name="item_name" value="Design">
-              <input type="hidden" name="currency_code" value="USD">
-
-              <!-- Provide a drop-down menu option field with prices. -->
-              <input type="hidden" name="on0" value="Design">Mile High Heli Showdown option<br />
-              <select name="os1">
-                <!-- <option value="2cents">My 2 Cents - $0.02 USD</option> -->
-                <option value="mhhsd">Mile High Heli Showdown - $35.00 USD</option>
-              </select> <br />
-
-              <!-- Specify the price that PayPal uses for each option. -->
-              <input type="hidden" name="option_index" value="1">
-              <!-- <input type="hidden" name="option_select0" value="2cents">
-              <input type="hidden" name="option_amount0" value="00.02"> -->
-              <input type="hidden" name="option_select1" value="mhhsd">
-              <input type="hidden" name="option_amount1" value="35.00">
-
-              <!-- Display the payment button. -->
-              <input type="image" name="submit" border="0"
-                src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
-                alt="Buy Now">
-              <img alt="" border="0" width="1" height="1"
-                src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
-
-            </form>
-
-          </div>
-          <div class="modal-footer">
-            <img src="/images/paypal-logo-129.svg" width="129px" height="32" alt="Pay with PayPal">
+          <div class="notice" style="margin-top:1rem;">
+            Ready to register? <a href="register.html"><strong>Register here</strong></a>.
           </div>
         </div>
       </div>
     </div>
-
-            <script>
-                /* Section Header - Sticky Header */
-                $(document).ready(function(){
-                    $(window).scroll(function () {
-                        if ($(this).scrollTop() > 100) {
-                            $("header").addClass("header-solid");
-                            } else {
-                            $("header").removeClass("header-solid");
-                            }
-                    });
-                });
+  </section>
+</main>
 
 
-                /* Hamburger Menu */
-                $(document).ready(function(){
-                    $('#hamburger-toggle').click(function(){
-                        $(this).toggleClass('open');
-                        $("#mobile-nav-container").toggle();
-                    });
-                    $('#mobile-why-attend').click(function(){
-                        $(this).toggleClass('open');
-                        $("#mobile-nav-container").toggle();
-                    });
-                    $('#mobile-agenda').click(function(){
-                        $(this).toggleClass('open');
-                        $("#mobile-nav-container").toggle();
-                    });
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div><strong>Stay connected</strong></div>
+      <div class="small">
+        <a href="https://www.facebook.com/groups/milehighhelishowdown/" target="_blank" rel="noopener noreferrer">
+          Facebook Group
+        </a>
+      </div>
+    </div>
+    <div class="small">Copyright © 2026 Mile High Heli Showdown</div>
+  </div>
+</footer>
 
+<script>
+(function(){
+  const btn = document.getElementById('menuButton');
+  const menu = document.getElementById('mobileMenu');
+  if(!btn || !menu) return;
 
-                });
+  function closeMenu(){
+    menu.style.display = 'none';
+    btn.setAttribute('aria-expanded','false');
+  }
+  function openMenu(){
+    menu.style.display = 'block';
+    btn.setAttribute('aria-expanded','true');
+  }
 
-        </script>
-    </body>
+  btn.addEventListener('click', function(){
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    expanded ? closeMenu() : openMenu();
+  });
+
+  document.addEventListener('click', function(e){
+    const within = menu.contains(e.target) || btn.contains(e.target);
+    if(!within) closeMenu();
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeMenu();
+  });
+})();
+</script>
+</body>
 </html>
